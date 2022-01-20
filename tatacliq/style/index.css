@@ -1,0 +1,337 @@
+#ravmain {
+    background-color: rgb(236,236,236);
+}
+#ravfirstbox {
+    width: 100%;
+    height: 400px;
+    /* background-color: red; */
+    background-image: url(../image/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#ravsecondbox {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(236,236,236);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 70px;
+}
+
+.ravsecondbox1 {
+    flex: .1;
+    /* background-color: black; */
+    height: 80%;
+    background-image: url(../image/b1.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ravsecondbox2 {
+    flex: .1;
+    /* background-color: black; */
+    height: 80%;
+    background-image: url(../image/b2.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ravsecondbox3 {
+    flex: .1;
+    /* background-color: black; */
+    height: 80%;
+    background-image: url(../image/b3.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ravsecondbox4 {
+    flex: .1;
+    /* background-color: black; */
+    height: 80%;
+    background-image: url(../image/b4.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ravsecondbox5 {
+    flex: .1;
+    /* background-color: black; */
+    height: 80%;
+    background-image: url(../image/b5.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ravsecondbox6 {
+    flex: .1;
+    /* background-color: black; */
+    height: 80%;
+    background-image: url(../image/b6.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ravsecondbox7 {
+    flex: .1;
+    /* background-color: black; */
+    height: 80%;
+    background-image: url(../image/b7.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ravsecondbox8 {
+    flex: .1;
+    /* background-color: black; */
+    height: 80%;
+    background-image: url(../image/b8.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ravsecondbox9 {
+    flex: .1;
+    /* background-color: black; */
+    height: 80%;
+    background-image: url(../image/b9.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* #ravfirstbox {
+    position: relative;
+} */
+
+#ravposter {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(236,236,236);
+    display: flex;
+}
+
+.ravposter1 {
+    flex: 1;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.ravposter11 {
+    width: 97%;
+    height: 50px;
+    /* background-color: tomato; */
+    background-image: url(../image/l1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    border: 1.5px solid #fff;
+}
+
+.ravposter2 {
+    flex: 1;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.ravposter12 {
+    width: 97%;
+    height: 50px;
+    background-color: tomato;
+    border-radius: 3px;
+    background-image: url(../image/l2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    border: 1.5px solid #fff;
+}
+
+#ravposterm {
+    width: 100%;
+    height: 400px;
+    padding: 2% 0;
+    background-color: rgb(236,236,236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ravposterm1 {
+    width: 1024px;
+    height: 90%;
+    background-color: #000;
+    background-image: url(../image/poster1.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 7px;
+}
+
+#ravposterm1 {
+    width: 100%;
+    height: 200px;
+    /* padding: 2% 0; */
+    background-color: rgb(236,236,236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ravposterm2 {
+    width: 1024px;
+    height: 90%;
+    background-color: #000;
+    background-image: url(../image/poster2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 7px;
+}
+
+#ravgrid1, #ravgrid2, #ravgrid3, #ravgrid4, #ravgrid5, #ravgrid6, #ravgrid7, #ravgrid8, #ravgrid9, #ravgrid10 {
+    width: 100%;
+    padding: 100px 120px;
+    height: 450px;
+    background-color: rgb(236,236,236);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+/* #ravgrid2, #ravgrid3 {
+    width: 100%;
+    padding: 100px 120px;
+    height: 450px;
+    background-color: rgb(236,236,236);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+} */
+
+/* #ravgrid3 {
+    width: 100%;
+    padding: 100px 120px;
+    height: 450px;
+    background-color: rgb(236,236,236);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+} */
+
+.ravgrid11 {
+    width: 236px;
+    height: 316px;
+    /* background-color: royalblue; */
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+
+.ravgrid11 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    /* transition: width 1s ease-out; */
+}
+
+.ravgrid11:hover {
+    transform: scale(1.03);
+}
+
+#ravposterm2 {
+    width: 100%;
+    height: 200px;
+    /* padding: 2% 0; */
+    background-color: rgb(236,236,236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ravposterm3 {
+    width: 1000px;
+    height: 30%;
+    background-color: #000;
+    background-image: url(../image/textimg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 7px;
+}
+
+.ravposterm4 {
+    width: 1000px;
+    height: 30%;
+    background-color: #000;
+    background-image: url(../image/deals1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 7px;
+}
+
+.ravposterm5 {
+    width: 1000px;
+    height: 30%;
+    background-color: #000;
+    background-image: url(../image/elect.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 7px;
+}
+
+.ravposterm6 {
+    width: 1024px;
+    height: 67%;
+    background-color: #000;
+    background-image: url(../image/ac.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 7px;
+}
+
+.ravposterm7 {
+    width: 1024px;
+    height: 90%;
+    background-color: #000;
+    background-image: url(../image/crea.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 7px;
+}
+
+.ravposterm8 {
+    width: 1024px;
+    height: 90%;
+    background-color: #000;
+    background-image: url(../image/lap.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 7px;
+}
