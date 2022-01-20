@@ -338,4 +338,8 @@ ul li {
         background-color: rgb(33,33,33);
         color: red;
     }
+
+    .ravbox1 {
+        display: none;
+    }
 }
