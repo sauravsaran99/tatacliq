@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(236,236,236);
+}
+
 #ravmain {
     background-color: rgb(236,236,236);
 }
@@ -334,4 +338,47 @@
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 7px;
+}
+
+@media only screen and (min-width: 638px) and (max-width: 1024px) {
+    #ravgrid1, #ravgrid2, #ravgrid3, #ravgrid4, #ravgrid5, #ravgrid6, #ravgrid7, #ravgrid8, #ravgrid9, #ravgrid10 {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ravposterm1, .ravposterm2 {
+        width: 700px;
+        height: 70%;
+    }
+
+    #ravgrid5, .ravposterm6, .ravposterm5, .ravposterm4, .ravposterm7, #ravgrid6,#ravgrid7, #ravposterm, #ravgrid8, #ravgrid9, #ravgrid10, .ravposterm3  {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 638px) {
+    #ravgrid1, #ravgrid2, #ravgrid3, #ravgrid4, #ravgrid5, #ravgrid6, #ravgrid7, #ravgrid8, #ravgrid9, #ravgrid10 {
+        padding: 0;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #ravfirstbox {
+        width: 100%;
+        height: 200px;
+    }
+
+    .ravposterm1, .ravposterm2 {
+        width: 450px;
+        height: 50%;
+    }
+
+    #ravsecondbox {
+        display: none;
+    }
+
+    #ravgrid5, .ravposterm6, .ravposterm5, .ravposterm4, .ravposterm7, #ravgrid6,#ravgrid7, #ravposterm, #ravgrid8, #ravgrid9, #ravgrid10, .ravposterm3  {
+        display: none;
+    }
 }
