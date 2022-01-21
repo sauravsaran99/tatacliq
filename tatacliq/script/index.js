@@ -10,7 +10,7 @@ function changeImage() {
         i = 0;
     }
 
-        document.querySelector('#ravfirstbox').style.backgroundImage = `url(${tryI[i]})`;
+        document.querySelector('#ravfirstbox').src = tryI[i];
 
     i = i+1;
 }

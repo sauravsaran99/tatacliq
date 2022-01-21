@@ -15,7 +15,7 @@ function navbar() {
         <div id="ravnavtwoone">
             <div class="ravone1">Tata CLiQ Luxury</div>
             <div class="ravone2">
-                <ul>
+                <ul id="uldesign">
                     <li>CLiQ Cash</li>
                     <li>Gift Card</li>
                     <li>CLiQ Care</li>

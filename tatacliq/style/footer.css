@@ -94,3 +94,17 @@ font-family: 'Roboto Condensed', sans-serif;
               font-size: 17px;
           }
          
+
+          
+@media only screen and (min-width: 638px) and (max-width: 1024px) {
+    #list {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 638px) {
+    #list, #details, #foot_top {
+        display: none;
+    }
+}

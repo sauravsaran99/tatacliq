@@ -39,12 +39,12 @@ font-family: 'Roboto Condensed', sans-serif;
     color: #fff;
 }
 
-ul {
+#uldesign {
     list-style: none;
     display: flex;
 }
 
-ul li {
+#uldesign li {
     margin-right: 40px;
     cursor: pointer;
 }
