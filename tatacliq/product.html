@@ -28,7 +28,11 @@
 
         <div class="fil3">
             <p>Category</p>
-            <p>Men's Clothing</p>
+            <p class="Nuon">Nuon Man</p>
+            <p class="wesF">WES Formals</p>
+            <p class="wesC">WES Casuals</p>
+            <p class="eta">Eta</p>
+            <p class="Ascot">Ascot</p>
     </div>
     </div>
     <div id="ravmain">
@@ -56,7 +60,11 @@
       import maiData from './script/productdata.js';
       
       let myData = maiData;
+      let cArr = JSON.parse(localStorage.getItem('localDa')) || [];
       
+    display(myData)
+      function display(myData) {
+          document.querySelector('#ravmain').innerHTML = '';
       myData.map(function(elm) {
           let div1 = document.createElement('div');
           div1.setAttribute('id', 'div1s')
@@ -70,9 +78,103 @@
           p2.textContent = elm.title;
           let p3 = document.createElement('p');
           p3.textContent = elm.Newprice;
+          let div2 = document.createElement('div');
+          div2.setAttribute('class', 'button');
+          div2.textContent = 'Buy Now';
+
+          div2.addEventListener('click', localData);
+          function localData() {
+              cArr.push(elm);
+              localStorage.setItem('localDa', JSON.stringify(cArr));
+              console.log(cArr);
+          }
 
           document.querySelector('#ravmain').append(div1);
-          div1.append(img1, p1, p2, p3)
+          div1.append(img1, p1, p2, p3, div2)
       })
+    }
 
+
+
+    let arr = [];
+
+        document.querySelector('.Nuon').addEventListener('click', nuon);
+        function nuon() {
+            let val = 'Nuon Men';
+            myData.filter(function(a) {
+         if(a.name == val) {
+             arr.push(a);
+
+             display(arr);
+         } 
+        });
+
+        }
+
+
+        document.querySelector('.wesF').addEventListener('click', wesF);
+        function wesF() {
+            let val = 'WES Formals';
+            myData.filter(function(a) {
+                arr = [];
+         if(a.name == val) {
+
+            arr = [];
+             arr.push(a);
+
+             display(arr);
+         } 
+        });
+
+        }
+
+
+        document.querySelector('.wesC').addEventListener('click', wesC);
+        function wesC() {
+            let val = 'WES Casuals';
+            myData.filter(function(a) {
+                arr = [];
+         if(a.name == val) {
+
+            arr = [];
+             arr.push(a);
+
+             display(arr);
+         } 
+        });
+
+        }
+
+
+        document.querySelector('.Ascot').addEventListener('click', Ascot);
+        function Ascot() {
+            let val = 'Ascot';
+            myData.filter(function(a) {
+                arr = [];
+         if(a.name == val) {
+
+            arr = [];
+             arr.push(a);
+
+             display(arr);
+         } 
+        });
+
+        }
+
+        document.querySelector('.eta').addEventListener('click', eta);
+        function eta() {
+            let val = 'ETA';
+            myData.filter(function(a) {
+                arr = [];
+         if(a.name == val) {
+
+            arr = [];
+             arr.push(a);
+
+             display(arr);
+         } 
+        });
+
+        }
 </script>
