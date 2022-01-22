@@ -10,16 +10,17 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-        #box1 {
-            display: none;
+       @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+       body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
-
-        #container {
+       #container {
             display: flex;
             flex-direction: column;
             max-width: 450px;
-            height: 622px;
+            height: 522px;
             margin: auto;
             margin-top: 60px;
             border-radius: 45px;
@@ -32,9 +33,11 @@
             text-align: center;
             line-height: 76%;
         }
-
-        #mob,
-        #em {
+        #wel > p{
+            color: lightslategrey;
+        }
+        #mob
+        {
             color: crimson;
             cursor: pointer;
         }
@@ -45,18 +48,13 @@
             font-weight: bold;
         }
 
-        body {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
         #fieldset {
             position: relative;
             height: 35px;
             width: 78%;
             margin-left: 10%;
             margin-bottom: 17px;
+            margin-top: 20px;
             display: flex;
         }
 
@@ -75,20 +73,6 @@
             z-index: 1;
         }
 
-        #email {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            height: 100%;
-            width: 89%;
-            border: 1px solid lightgray;
-            font-size: 16px;
-            padding: 0 20px;
-            outline: none;
-            background: none;
-            z-index: 1;
-        }
-
         .label {
             position: absolute;
             top: 10px;
@@ -104,14 +88,6 @@
             left: 65px;
         }
 
-        #right {
-            left: 20px;
-        }
-
-        input {
-            float: left;
-        }
-
         input::placeholder {
             color: transparent;
         }
@@ -120,14 +96,6 @@
             top: -10px;
             z-index: 10;
             margin-left: -50px;
-            font-size: 14px;
-            color: lightgrey;
-        }
-
-        #email:focus+.label {
-            top: -10px;
-            z-index: 10;
-            margin-left: -5px;
             font-size: 14px;
             color: lightgrey;
         }
@@ -149,29 +117,24 @@
             outline: none;
         }
 
-        .center {
-            text-align: center;
-        }
-
         #container>p {
             margin: auto;
             width: 75%;
-            margin-top: 30px;
+            margin-top: 35px;
             font-size: 14px;
         }
 
         .button {
             width: 80%;
-            height: 9%;
+            height: 9.5%;
             margin: auto;
-            margin-top: -150px;
+            margin-top: -100px;
             border-radius: 15px;
             font-size: 18px;
             color: #fff;
             text-align: center;
             border: 0;
             outline: none;
-            padding: 13px 15px;
             background-color: #e4e4e4;
             cursor: not-allowed;
         }
@@ -207,34 +170,23 @@
         <div id="wel">
             <h1>Welcome to Tata</h1>
             <h1>CLiQ</h1>
+            <p>Please enter your Mobile Number</p>
         </div>
 
-        <!--  Email details -->
-        <div id="box1">
-            <p class="center">Please enter your Email Address</p>
-            <div id="fieldset">
-                <input type="email" class="input" placeholder="Enter E-mail Address" id="email" onkeyup="handle()" />
-                <label for="mail" class="label" id="right">E-mail Address</label>
-            </div>
-            <h3 id="em" class="center" onclick="displayMobile()">Use Mobile Number</h3>
-        </div>
         <!-- Mobile number details -->
         <div id="box2">
-            <p class="center">Please enter your Mobile Number</p>
             <div id="fieldset">
                 <div class="dot">+91</div>
                 <input type="tel" placeholder="Enter Mobile Number" maxlength="10" class="input" id="mobile"
-                   onkeyup="handle()" /> 
+                    onkeyup="handle()" />
                 <label for="number" class="label" id="left"> Mobile Number</label>
             </div>
-            <h3 id="mob" class="center" onclick="displayEmail()">Use Email Address</h3>
         </div>
-       <!-- Terms and condition -->
+        <!--Terms and condition -->
         <p>By continue you are agree to our
             <a href="#" class="">Terms of Service</a> &
             <a href="#" class="">Privacy Policy</a>
         </p>
-        <!-- button -->
         <button class="button" disabled>Continue</button>
     </div>
 </body>
@@ -242,31 +194,12 @@
 </html>
 
 <script>
-
-    var displayMobilePage_MSK = true;
-
-   // hiding the div by clicking this function. show only mail or number
-    function displayEmail() {
-        document.querySelector("#box1").style.display = "block";
-        document.querySelector("#box2").style.display = "none";
-        document.querySelector(".button").disabled = true;
-        displayMobilePage_MSK = false;
-    }
-    function displayMobile() {
-        document.querySelector("#box1").style.display = "none";
-        document.querySelector("#box2").style.display = "block";
-        document.querySelector(".button").disabled = true;
-        displayMobilePage_MSK = true;
-    }
-
-    //   checking value empty or not
+//    Mobile function
     function handle() {
         let mobile = document.querySelector("#mobile").value;
-        let email = document.querySelector("#email").value;
-
-        // checking mobile value empty or not
+      
         if (mobile != "" && mobile.length == 10) {
-
+           
             document.querySelector(".button").disabled = false;
             document.querySelector(".button").classList.add("btnEn");
         } else {
@@ -275,29 +208,12 @@
                 "linear-gradient(to bottom right, #89216b, #da4453);";
         }
 
-        // checking email value empty or not
-        if (email != null) {
-            if (email.length > 5 && email.includes("@") && email.endsWith(".com")) {
-                document.querySelector(".button").disabled = false;
-                document.querySelector(".button").classList.add("btnEn");
-            }
-        } else {
-            document.querySelector(".button").disabled = true;
-        }
-
     }
-
-    // moving one page to next page by clicking button
     document.querySelector(".button").addEventListener("click", function () {
-
-        if(displayMobilePage_MSK == true)
-            window.location.href = "./otp.html";
-        else
-            window.location.href = "./loginEmail.html";
+        window.location.href = "./otpemail.html";
     });
-
-    //  delete whole page by clicking this button
+   
     document.querySelector("#close_btn").addEventListener("click", function () {
         window.location.href = "./index.html";
-    });
+    })
 </script>
