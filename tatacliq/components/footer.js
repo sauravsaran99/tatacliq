@@ -119,8 +119,8 @@ function footer(){
                         <div><i class="fab fa-twitter-square" style="font-size: 22px;"></i></div>
                         <div><i class="fab fa-youtube" style="font-size: 22px;"></i></div>
                         <div><i class='fa fa-linkedin-square' style="font-size: 22px;"></i></div>
-                    </div id="tata">
-                    <div>© 2022 Tata CLiQ | All rights reserved</div>
+                    </div>
+                    <div id="tata">© 2022 Tata CLiQ | All rights reserved</div>
                 </div>
             </div>
             <div id="foot">
