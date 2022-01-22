@@ -1,0 +1,29 @@
+#twobox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fil1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter {
+    width: 200px;
+    margin-left: 50px;
+    background-color: red;
+}
+
+#ravmain {
+    width: 900px;
+    min-height: 800px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    float: right;
+}
+
+#div1s img {
+    width: 100%;
+    height: 60%;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="style/product.css">
+    <title>Product</title>
+</head>
+<body>
+    <div id="navbar">
+        
+    </div>
+    <!-- Main  -->
+<div id="twobox">
+    <div class="filter">
+        <div class="fil1">
+            <p>Filters</p>
+            <p>Clear All</p>
+        </div>
+<hr>
+        <div class="fil2">
+            <p>Department</p>
+            <p>Men's Clothing</p>
+        </div>
+
+        <div class="fil3">
+            <p>Category</p>
+            <p>Men's Clothing</p>
+    </div>
+    </div>
+    <div id="ravmain">
+
+    </div>
+</div>
+
+    <!-- Main end -->
+    <!-- <div id="Foot_container">
+
+    </div> -->
+</body>
+<script src="./script/index.js"></script>
+<script src="./components/navmain.js" type="module"></script>
+<script src="./script/data.js" type="module"></script>
+</html>
+
+<script type="module">
+    //   import footer from './components/footer.js';
+
+    //   let foot = document.querySelector('#Foot_container');
+
+    // foot.innerHTML = footer();
+
+      import maiData from './script/productdata.js';
+      
+      let myData = maiData;
+      
+      myData.map(function(elm) {
+          let div1 = document.createElement('div');
+          div1.setAttribute('id', 'div1s')
+
+          let img1 = document.createElement('img');
+          img1.setAttribute('class', 'imgF');
+          img1.src = elm.url;
+          let p1 = document.createElement('p');
+          p1.textContent = elm.name;
+          let p2 = document.createElement('p');
+          p2.textContent = elm.title;
+          let p3 = document.createElement('p');
+          p3.textContent = elm.Newprice;
+
+          document.querySelector('#ravmain').append(div1);
+          div1.append(img1, p1, p2, p3)
+      })
+
+</script>
