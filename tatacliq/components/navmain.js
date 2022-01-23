@@ -1,6 +1,7 @@
 
 import navbar from "./navbar.js";
 
+
 let container = document.querySelector('#navbar');
 
 container.innerHTML = navbar();
@@ -41,5 +42,8 @@ function display3() {
     document.querySelector('.ravbox2').style.display = 'none';
 }
 
+document.querySelector('#ravnavone').addEventListener('click', function() {
+    window.location.href = 'index.html'
+})
 
     
