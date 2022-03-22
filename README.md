@@ -5,7 +5,7 @@ In this project we have tried to clone the “Tatacliq” website. We had build 
 
 # Deployed Link:
 
-https://sleepy-scrubland-64819.herokuapp.com/home
+https://optimistic-fermat-8bc5e2.netlify.app/
  
 # Snapshots
 
